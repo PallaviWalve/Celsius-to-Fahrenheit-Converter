@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Coverter</h1>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxM9cPZXKCyBEtmi6fLzcg_MzlfQAn3MRhcA&s" alt="">
+<p class="x1"></p>
+
+<input type="text" class="x2" placeholder="Enter Temperature"><br><br>
+
+<button onclick="f1()">Covert</button>
+<p class="x3">
+  
+</p>
+</body>
+</html>
+
+
+<script>
+
+var temp;
+var far;
+    function f1() {
+    var temp=document.querySelector(".x2").value;
+    far=temp*9/5+32;
+    
+    document.querySelector(".x3").innerHTML= " Fahrenheit &#x2109 :"+far;
+
+
+    }
+</script>
+<style>
+    body{
+        text-align: center;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        background-color: antiquewhite;
+        
+    }
+    
+    img{
+        width: 90px;
+    }
+
+    button{
+
+        border-radius: 8px;
+        font-size: 20px;
+        background-color:  #04AA6D;
+        color: white;
+        padding: 12px 28px;
+    }
+    .x2{
+        height: 30px;
+    }
+   
+    @media screen and (max-width:576px){
+   .logo{
+        
+       text-align: center;
+   }
+}
+</style>
